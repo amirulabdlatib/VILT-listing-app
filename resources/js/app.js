@@ -4,6 +4,7 @@ import {ZiggyVue} from '../../vendor/tightenco/ziggy';
 import { createApp, h } from 'vue'
 import { Link,Head,createInertiaApp } from '@inertiajs/vue3'
 import Layout from './Layouts/Layout.vue';
+import { setThemeOnLoad } from './theme';
 
 
 createInertiaApp({
@@ -23,3 +24,5 @@ createInertiaApp({
       .mount(el)
   },
 })
+
+setThemeOnLoad()
