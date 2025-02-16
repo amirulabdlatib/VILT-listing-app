@@ -8,7 +8,7 @@ import { setThemeOnLoad } from './theme';
 
 
 createInertiaApp({
-  title: (title) => `Listing | ${title}`,
+  title: (title) => `Listing  ${title}`,
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
     let page = pages[`./Pages/${name}.vue`]
