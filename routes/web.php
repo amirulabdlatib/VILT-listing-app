@@ -10,3 +10,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/register',[RegisterController::class, 'create'])->name('register');
+Route::post('/register',[RegisterController::class, 'store'])->name('user.register');
