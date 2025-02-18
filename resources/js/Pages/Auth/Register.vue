@@ -25,7 +25,7 @@
                     Privacy Policy.
                 </p>
 
-                <PrimaryButton>Register</PrimaryButton>
+                <PrimaryButton :disabled="form.processing">Register</PrimaryButton>
 
             </form>
 
