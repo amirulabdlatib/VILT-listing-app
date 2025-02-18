@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 
 Route::get('/', function () {
@@ -11,3 +13,4 @@ Route::get('/', function () {
 
 Route::get('/register',[RegisterController::class, 'create'])->name('register');
 Route::post('/register',[RegisterController::class, 'store'])->name('user.register');
+Route::get('/login',[LoginController::class, 'getLoginPage'])->name('login');

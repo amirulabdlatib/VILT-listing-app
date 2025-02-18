@@ -5,7 +5,7 @@
                 Register a new account
             </Title>
             <p>Already have an acoount?
-                <TextLink routeName="home" label="Login" />
+                <TextLink routeName="login" label="Login" />
             </p>
 
             <form @submit.prevent="register" class="space-y-6 mt-6">
